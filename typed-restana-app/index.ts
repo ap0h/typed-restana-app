@@ -14,16 +14,18 @@ export {
   TypeSafeApp
 } from './core/schema-types';
 
-// Legacy compatibility exports
+// Configuration and validation exports
 export {
   RouteSchema,
   RouteMetadata,
-  ValidationError
+  ValidationError,
+  TypedAppConfig,
 } from './core/typed-app';
 
 // Examples and demonstrations
 export { default as demonstrateTypeSafeRoutes } from './examples/type-safety-demo';
 export { default as registerPocEndpoints } from './examples/zod-poc-endpoints';
+export { default as demonstrateStrictnessFeatures, strictnessExamples } from './examples/strictness-demo';
 
 // Re-export Zod for convenience
 export { z } from 'zod';
