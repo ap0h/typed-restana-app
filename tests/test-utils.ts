@@ -1,7 +1,7 @@
 import restana from 'restana';
-import { createTypedApp } from '../typed-restana-app/core/typed-app';
-import { TypeSafeApp } from '../typed-restana-app/core/schema-types';
-import { TypedAppConfig } from '../typed-restana-app/core/typed-app';
+import { createTypedApp } from '../src/core/typed-app';
+import { TypeSafeApp } from '../src/core/schema-types';
+import { TypedAppConfig } from '../src/core/typed-app';
 
 /**
  * Creates a TypeSafeApp with common middleware for testing

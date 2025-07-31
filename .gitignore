@@ -1,2 +1,12 @@
 node_modules
 dist
+lib
+coverage
+*.log
+.DS_Store
+.env
+.env.local
+examples/*.js
+examples/*.d.ts
+examples/*.js.map
+examples/*.d.ts.map

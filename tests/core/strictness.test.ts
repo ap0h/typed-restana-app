@@ -1,7 +1,6 @@
 import request from 'supertest';
 import { z } from 'zod';
-import { TypeSafeApp } from '../../typed-restana-app/core/schema-types';
-import { createTestApp, strictTestConfig, responseValidationConfig } from '../test-utils';
+import { createTestApp } from '../test-utils';
 
 describe('Strictness Configuration', () => {
   let server: any;

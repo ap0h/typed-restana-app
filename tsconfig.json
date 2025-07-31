@@ -3,7 +3,7 @@
     "target": "ES2020",
     "module": "commonjs",
     "lib": ["ES2020"],
-    "outDir": "./dist",
+    "outDir": "./lib",
     "rootDir": "./",
     "strict": true,
     "esModuleInterop": true,
@@ -21,7 +21,7 @@
     "moduleResolution": "node",
     "baseUrl": ".",
     "paths": {
-      "@/*": ["typed-restana-app/*"]
+      "@/*": ["src/*"]
     },
     "allowSyntheticDefaultImports": true,
     "experimentalDecorators": true,
@@ -29,13 +29,13 @@
     "resolveJsonModule": true
   },
   "include": [
-    "typed-restana-app/**/*",
-    "src/**/*"
+    "src/**/*",
+    "examples/**/*",
+    "tests/**/*"
   ],
   "exclude": [
     "node_modules",
-    "dist",
-    "**/*.test.ts",
-    "**/*.spec.ts"
+    "lib",
+    "dist"
   ]
 }

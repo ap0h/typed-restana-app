@@ -1,7 +1,7 @@
 import { z } from 'zod';
 import restana from 'restana';
-import { createTypedApp } from '../../typed-restana-app/core/typed-app';
-import { generateOpenApiSpec } from '../../typed-restana-app/scripts/generate-typed-openapi';
+import { createTypedApp } from '../../src/core/typed-app';
+import { generateOpenApiSpec } from '../../src/scripts/generate-typed-openapi';
 
 describe('OpenAPI Generation', () => {
   describe('Schema Generation', () => {

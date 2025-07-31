@@ -10,9 +10,9 @@ import { zodToJsonSchema } from 'zod-to-json-schema';
 import { join } from 'path';
 
 import { createTypedApp } from '../core/typed-app';
-import registerPocEndpoints from '../examples/zod-poc-endpoints';
-import { demonstrateTypeSafeRoutes } from '../examples/type-safety-demo';
-import demonstrateStrictnessFeatures from '../examples/strictness-demo';
+import registerPocEndpoints from '../../examples/zod-poc-endpoints';
+import { demonstrateTypeSafeRoutes } from '../../examples/type-safety-demo';
+import demonstrateStrictnessFeatures from '../../examples/strictness-demo';
 
 // Mock app to register routes for documentation
 const mockRestanaApp = {

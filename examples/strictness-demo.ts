@@ -6,8 +6,7 @@
  */
 
 import { z } from 'zod';
-import { TypeSafeApp } from '../core/schema-types';
-import restana from 'restana';
+import { TypeSafeApp } from '../src/core/schema-types';
 
 // =============================================================================
 // Schema Definitions with Different Strictness Levels

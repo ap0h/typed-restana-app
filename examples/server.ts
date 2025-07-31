@@ -11,10 +11,10 @@
 import restana from 'restana';
 import cors from 'cors';
 import helmet from 'helmet';
-import { createTypedApp } from '../../typed-restana-app/core/typed-app';
-import registerPocEndpoints from '../../typed-restana-app/examples/zod-poc-endpoints';
-import { demonstrateTypeSafeRoutes } from '../../typed-restana-app/examples/type-safety-demo';
-import demonstrateStrictnessFeatures from '../../typed-restana-app/examples/strictness-demo';
+import { createTypedApp } from '../src/core/typed-app';
+import registerPocEndpoints from './zod-poc-endpoints';
+import { demonstrateTypeSafeRoutes } from './type-safety-demo';
+import demonstrateStrictnessFeatures from './strictness-demo';
 
 const PORT = Number(process.env.PORT) || 3000;
 

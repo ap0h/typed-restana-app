@@ -10,7 +10,7 @@
  */
 
 import { z } from 'zod';
-import { TypeSafeApp } from '../core/schema-types';
+import { TypeSafeApp } from '../src/core/schema-types';
 
 // =============================================================================
 // User Management API - POC Endpoints

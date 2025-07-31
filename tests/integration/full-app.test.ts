@@ -1,6 +1,6 @@
 import request from 'supertest';
 import { z } from 'zod';
-import { TypeSafeApp } from '../../typed-restana-app/core/schema-types';
+import { TypeSafeApp } from '../../src/core/schema-types';
 import { createTestApp } from '../test-utils';
 
 describe('Full Application Integration', () => {

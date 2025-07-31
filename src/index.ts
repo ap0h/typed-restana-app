@@ -22,13 +22,8 @@ export {
   TypedAppConfig,
 } from './core/typed-app';
 
-// Examples and demonstrations
-export { default as demonstrateTypeSafeRoutes } from './examples/type-safety-demo';
-export { default as registerPocEndpoints } from './examples/zod-poc-endpoints';
-export { default as demonstrateStrictnessFeatures, strictnessExamples } from './examples/strictness-demo';
-
-// Re-export Zod for convenience
-export { z } from 'zod';
+// Note: Examples are available in the /examples directory for reference
+// Users should import { z } from 'zod' directly in their projects
 
 // Type utilities
 export type {

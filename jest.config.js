@@ -1,7 +1,7 @@
 module.exports = {
   preset: 'ts-jest',
   testEnvironment: 'node',
-  roots: ['<rootDir>/tests', '<rootDir>/typed-restana-app'],
+  roots: ['<rootDir>/tests', '<rootDir>/src'],
   testMatch: [
     '**/__tests__/**/*.ts',
     '**/?(*.)+(spec|test).ts'
@@ -10,11 +10,9 @@ module.exports = {
     '^.+\.ts$': 'ts-jest',
   },
   collectCoverageFrom: [
-    'typed-restana-app/**/*.ts',
-    '!typed-restana-app/**/*.d.ts',
-    '!typed-restana-app/**/index.ts',
-    '!typed-restana-app/examples/**',
-    '!typed-restana-app/scripts/**'
+    'src/**/*.ts',
+    '!src/**/*.d.ts',
+    '!src/**/index.ts'
   ],
   coverageDirectory: 'coverage',
   coverageReporters: ['text', 'lcov', 'html'],

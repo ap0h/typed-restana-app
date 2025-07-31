@@ -6,7 +6,7 @@
 
 import restana from 'restana';
 import { z } from 'zod';
-import { createTypedApp } from '../typed-restana-app';
+import { createTypedApp } from '../src';
 
 // Define Zod schemas first (single source of truth)
 const HelloQuerySchema = z.object({
@@ -27,16 +27,12 @@ const service = restana();
 const app = createTypedApp(service);
 
 // Define type-safe route
-app.get<{ query: HelloQuery }, unknown, { 200: HelloResponse }>('/hello', {
+app.get<HelloQuery, unknown, HelloResponse>('/hello', {
   schema: {
     query: HelloQuerySchema,
     responses: {
       200: {
-        content: {
-          'application/json': {
-            schema: HelloResponseSchema
-          }
-        },
+        schema: HelloResponseSchema,
         description: 'Greeting response'
       }
     }

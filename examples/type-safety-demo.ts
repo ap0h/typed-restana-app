@@ -7,7 +7,7 @@
  */
 
 import { z } from 'zod';
-import { TypeSafeApp } from '../core/schema-types';
+import { TypeSafeApp } from '../src/core/schema-types';
 
 // ✅ NEW APPROACH: Define Zod schemas first, then infer TypeScript types
 const UserQuerySchema = z.object({
