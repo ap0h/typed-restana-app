@@ -11,7 +11,7 @@
   ],
   "scripts": {
     "build": "tsc -p tsconfig.build.json",
-    "dev": "tsx examples/server.ts",
+    "dev": " ts-node-dev --respawn --transpile-only examples/server.ts",
     "start": "node lib/examples/server.js",
     "generate-openapi": "tsx src/scripts/generate-typed-openapi.ts",
     "type-check": "tsc --noEmit",
