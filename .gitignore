@@ -10,3 +10,5 @@ examples/*.js
 examples/*.d.ts
 examples/*.js.map
 examples/*.d.ts.map
+test-driver/
+*.tgz

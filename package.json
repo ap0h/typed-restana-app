@@ -4,6 +4,10 @@
   "description": "Type-safe Restana service with Zod validation and OpenAPI generation",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:ap0h/typed-restana-app.git"
+  },
   "files": [
     "lib",
     "README.md",

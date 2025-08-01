@@ -22,6 +22,13 @@ export {
   TypedAppConfig,
 } from './core/typed-app';
 
+// OpenAPI generation
+export {
+  generateOpenApiSpec,
+  saveOpenApiSpec,
+  type OpenApiOptions
+} from './core/openapi';
+
 // Note: Examples are available in the /examples directory for reference
 // Users should import { z } from 'zod' directly in their projects
 
