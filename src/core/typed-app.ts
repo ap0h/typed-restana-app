@@ -1,6 +1,6 @@
 import { z } from 'zod';
 import { $ZodIssue } from '@zod/core';
-import { Protocol, Service, Request, Response } from 'restana';
+import { Protocol, Service, Request, Response, RequestHandler } from 'restana';
 
 import { TypeSafeApp, TypeSafeRouteConfig } from './schema-types';
 
@@ -46,6 +46,8 @@ export interface RouteConfig<TQuery = any, TParams = any, TBody = any, TResponse
   strict?: boolean;
   /** Per-route response validation override */
   validateResponse?: boolean;
+  /** Optional Restana middlewares to be executed before validation */
+  middlewares?: RequestHandler<Protocol.HTTP>[];
   handler: (context: {
     query: TQuery;
     params: TParams;
@@ -306,7 +308,8 @@ export function createTypedApp(
 
     // Register the route with Restana
     const handler = createValidatedHandler(config);
-    (restanaApp as any)[method](path, handler);
+    const middlewares = config.middlewares ?? [];
+    (restanaApp as any)[method](path, ...middlewares, handler);
   }
 
   // Create the typed app object
