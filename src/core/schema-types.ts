@@ -51,6 +51,8 @@ export interface TypeSafeRouteConfig<TQuery = any, TParams = any, TBody = any, T
   strict?: boolean;
   /** Per-route response validation override - validates response against schema */
   validateResponse?: boolean;
+  /** Optional Restana middlewares to be executed before validation */
+  middlewares?: restana.RequestHandler<restana.Protocol.HTTP>[];
   handler: TypeSafeRouteHandler<TQuery, TParams, TBody, TResponse>;
 }
 
